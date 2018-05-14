@@ -5,5 +5,6 @@
 
     <dubbo:application name="dubbo-consumer"/>
     <dubbo:registry check="false" address="zookeeper://127.0.0.1:2181"/>
-    <dubbo:reference interface="com.example.service.TestService" id="testService" />
+    <dubbo:reference interface="com.example.demo.service.TestService" id="testService" />
+    <dubbo:reference interface="com.example.demo.service.PersonService" id="personService" />
 </beans>
